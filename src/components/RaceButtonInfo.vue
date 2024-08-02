@@ -3,9 +3,10 @@
     no-caps
     rounded
     :ripple="false"
-    style="background-color: rgba(255, 255, 255, 0.8); width: 20%"
+    style="background-color: rgba(255, 255, 255, 0.8); width: 25%"
     text-color="black"
-    class="bordergreen q-mx-l"
+    :href="route"
+    class="borderblue q-mx-l"
   >
     <div class="q-py-none q-px-xl">
       <div class="text-h6 text-weight-bold">
@@ -19,10 +20,14 @@
 import { defineComponent } from "vue";
 
 export default defineComponent({
-  name: "InfoButton",
+  name: "RaceButtonInfo",
   components: {},
   props: {
     text: {
+      type: String,
+      required: true,
+    },
+    route: {
       type: String,
       required: true,
     },
@@ -33,10 +38,12 @@ export default defineComponent({
 });
 </script>
 <style>
-.bordergreen {
-  /*exterieur bulle de navigation de l'index*/
-  border: 3px green solid;
-  border-radius: 50px;
+.borderblue {
+  /*bordure du main des courses*/
+  border: 2px black solid;
+  border-radius: 15px;
   padding: 15px;
+  border-color: royalblue;
+  background-color: rgba(255, 255, 255, 0.8);
 }
 </style>

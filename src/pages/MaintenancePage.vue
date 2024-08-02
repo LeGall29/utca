@@ -1,19 +1,18 @@
 <template>
   <div
-    class="fullscreen bg-blue text-white text-center q-pa-md flex flex-center"
+    class="fullscreen bg-green text-white text-center q-pa-md flex flex-center"
   >
     <div>
-      <div style="font-size: 30vh">404</div>
+      <div style="font-size: 15vh">Page en cours de maintenance</div>
 
       <div class="text-h2" style="opacity: 0.4">
-        <!--Oops. Nothing here...-->
-        Oups, tu as fais une bêtise !!
+        Cette page sera bientôt disponible
       </div>
 
       <q-btn
         class="q-mt-xl"
         color="white"
-        text-color="blue"
+        text-color="green"
         unelevated
         to="/"
         label="Go Home"
@@ -27,6 +26,6 @@
 import { defineComponent } from "vue";
 
 export default defineComponent({
-  name: "ErrorNotFound",
+  name: "MaintenancePage",
 });
 </script>
